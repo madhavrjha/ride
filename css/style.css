@@ -524,6 +524,25 @@ header ul.sign-up-submenu a {
 
 /*
 ================================================================================
+  section#we
+================================================================================
+*/
+
+#we {
+  padding: 2rem 0;
+  padding-bottom: 4rem;
+  background-color: #6fc073;
+  border-radius: 0 0 40% 40%;
+}
+
+#we h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+/*
+================================================================================
   section#safety
 ================================================================================
 */
@@ -571,7 +590,7 @@ header ul.sign-up-submenu a {
 */
 
 #featured {
-  padding: 5rem 0;
+  padding: 7rem 0;
   background-color: #ebebff;
 }
 
@@ -601,7 +620,7 @@ header ul.sign-up-submenu a {
 #featured img {
   width: 100%;
 }
-
+/* 
 #featured .owl-dots {
   text-align: center;
   margin-top: 1rem;
@@ -622,7 +641,7 @@ header ul.sign-up-submenu a {
 #featured .owl-dot:hover,
 #featured .owl-dot.active {
   background-color: var(--theme-color) !important;
-}
+} */
 
 #featured .owl-prev,
 #featured .owl-next {
@@ -640,4 +659,46 @@ header ul.sign-up-submenu a {
 
 #featured .owl-next {
   right: -30px;
+}
+
+/*
+================================================================================
+  section#join
+================================================================================
+*/
+
+#join {
+  padding: 4rem 0;
+}
+
+#join .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#join h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+}
+
+#join article p:nth-child(2) {
+  color: #555;
+  font-size: 1.2rem;
+}
+
+#join article p:nth-child(3) {
+  color: var(--theme-color);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#join img {
+  display: block;
+  width: 70%;
+  margin: auto;
 }
