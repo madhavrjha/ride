@@ -32,6 +32,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 
 header .container {
@@ -250,47 +251,6 @@ header ul.sign-up-submenu a {
 
 /*
 ================================================================================
-  section#why
-================================================================================
-*/
-/* 
-#why {
-  padding: 5rem 0;
-  background-color: #f4f4f4;
-}
-
-#why h1 {
-  text-align: center;
-  font-weight: 600;
-  margin-bottom: 2rem;
-}
-
-#why .why-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
-  align-items: flex-start;
-  justify-content: center;
-  text-align: center;
-}
-
-#why .why-container img {
-  display: block;
-  margin: 1rem auto 2rem;
-}
-
-#why .why-container h2 {
-  font-size: 1.6rem;
-  font-weight: bold;
-}
-
-#why .why-container p {
-  width: 60%;
-  margin: auto;
-} */
-
-/*
-================================================================================
   section#drive
 ================================================================================
 */
@@ -435,4 +395,249 @@ header ul.sign-up-submenu a {
 #ride .btn:hover {
   opacity: 0.8;
   box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+/*
+================================================================================
+  section#vehicle
+================================================================================
+*/
+
+#vehicle {
+  padding: 4rem 0;
+  background-color: #ebebff;
+}
+
+#vehicle h1 {
+  margin-bottom: 1rem;
+}
+
+#vehicle .container > p {
+  margin-bottom: 3rem;
+}
+
+#vehicle .vehicle-carousel {
+  display: grid;
+}
+
+#vehicle .card {
+  padding: 1rem;
+  border-radius: 20px;
+  align-self: stretch;
+  min-height: 330px;
+}
+
+#vehicle h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#vehicle .card p {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
+
+#vehicle img {
+  width: 50%;
+  margin: auto;
+}
+
+#vehicle .btn {
+  align-self: center;
+  border: 2px solid var(--theme-color);
+  color: var(--theme-color);
+  padding: 0.4rem 1.3rem;
+  border-radius: 20px;
+  transition: all 0.5s;
+  outline: none;
+}
+
+#vehicle .btn:hover {
+  background-color: #f4f4f4;
+}
+
+#vehicle .owl-prev,
+#vehicle .owl-next {
+  position: absolute;
+  top: -4rem;
+  transform: translateY(-50%);
+  color: #777;
+  font-size: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+#vehicle .owl-prev:hover,
+#vehicle .owl-next:hover {
+  color: var(--theme-color);
+}
+
+#vehicle .owl-prev {
+  right: 10rem;
+}
+
+#vehicle .owl-next {
+  right: 5rem;
+}
+
+/*
+================================================================================
+  section#why
+================================================================================
+*/
+
+#why {
+  padding: 5rem 0;
+  background-color: #ebebff;
+}
+
+#why h1 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+#why .why-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+}
+
+#why .why-container img {
+  display: block;
+  margin: 1rem auto 2rem;
+}
+
+#why .why-container h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+#why .why-container p {
+  width: 60%;
+  margin: auto;
+}
+
+/*
+================================================================================
+  section#safety
+================================================================================
+*/
+
+#safety {
+  padding: 4rem 0;
+}
+
+#safety h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#safety .container > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#safety img {
+  display: block;
+  margin: auto;
+}
+
+#safety h2 {
+  margin-bottom: 2rem;
+}
+
+#safety p {
+  width: 65%;
+  margin: auto;
+  text-align: left;
+  color: #797979;
+  line-height: 2;
+}
+
+/*
+================================================================================
+  section#featured
+================================================================================
+*/
+
+#featured {
+  padding: 5rem 0;
+  background-color: #ebebff;
+}
+
+#featured h1 {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+#featured .wrapper {
+  width: 100%;
+}
+
+#featured .featured-carousel {
+  max-width: 85%;
+  margin: auto;
+  position: relative;
+}
+
+#featured .card {
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+#featured img {
+  width: 100%;
+}
+
+#featured .owl-dots {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#featured .owl-dot {
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  margin: 0 5px;
+  border: 2px solid var(--theme-color);
+  transition: all 0.3s ease-in-out;
+}
+
+#featured .owl-dot:hover,
+#featured .owl-dot.active {
+  background-color: var(--theme-color) !important;
+}
+
+#featured .owl-prev,
+#featured .owl-next {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  color: var(--theme-color);
+  font-size: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+#featured .owl-prev {
+  left: -30px;
+}
+
+#featured .owl-next {
+  right: -30px;
 }
