@@ -315,3 +315,53 @@
     left: 54%;
   }
 }
+
+@media (max-width: 576px) {
+  #vehicle {
+    padding: 2rem 0;
+  }
+}
+
+/*
+================================================================================
+  section#why
+================================================================================
+*/
+
+@media (max-width: 992px) {
+  #why .why-container p {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  #why .why-container {
+    grid-template-columns: 1fr;
+  }
+
+  #why .why-container h2 {
+    font-weight: 500;
+  }
+}
+
+/*
+================================================================================
+  section#we
+================================================================================
+*/
+
+@media (max-width: 992px) {
+  #we {
+    padding-bottom: 2rem;
+  }
+
+  #we h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #we h1 {
+    font-size: 1rem;
+  }
+}
