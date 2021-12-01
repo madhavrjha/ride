@@ -156,3 +156,81 @@
     margin-right: 0;
   }
 }
+
+/*
+================================================================================
+  section#company
+================================================================================
+*/
+
+@media (max-width: 992px) {
+  #company p {
+    font-size: 1rem;
+  }
+
+  #company .app-about-container p {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  #company {
+    padding: 2rem 0;
+  }
+
+  #company .app-about-container {
+    grid-template-columns: 1fr;
+  }
+
+  #company .app-about-container p {
+    width: 70%;
+  }
+}
+
+@media (max-width: 400px) {
+  #company .app-about-container p {
+    width: 100%;
+  }
+}
+
+/*
+================================================================================
+  section#drive
+================================================================================
+*/
+
+@media (max-width: 992px) {
+  #drive .container {
+    grid-template-columns: 1fr;
+  }
+
+  #drive .container > div {
+    grid-row: 1 / 2;
+  }
+
+  #drive img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #drive {
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  #drive {
+    padding-top: 0;
+  }
+
+  #drive img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  #drive img {
+    width: 70%;
+  }
+}
