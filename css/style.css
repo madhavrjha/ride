@@ -156,7 +156,7 @@ aside {
   height: 100vh;
   z-index: 3;
   background-color: #fff;
-  transition: all 0.7s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 aside.show {
