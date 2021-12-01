@@ -69,3 +69,90 @@
     margin-bottom: 1rem;
   }
 }
+
+/*
+================================================================================
+  section#hero
+================================================================================
+*/
+
+@media (max-width: 1200px) {
+  #hero h1 {
+    font-size: 4rem;
+  }
+
+  #hero .btn {
+    font-size: 1rem;
+    padding: 0.4rem 1.3rem;
+  }
+
+  #hero img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 992px) {
+  #hero {
+    padding: 2rem 0;
+  }
+
+  #hero .container {
+    grid-template-columns: 5fr 4fr;
+  }
+
+  #hero h1 {
+    font-size: 3rem;
+  }
+
+  #hero .btn {
+    padding: 0.3rem 1rem;
+  }
+
+  #hero img {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero .container {
+    grid-template-columns: 1fr;
+  }
+
+  #hero .container > div:nth-child(2) {
+    grid-row: 1 / 2;
+  }
+
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+
+  #hero img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  #hero {
+    padding: 1rem 0;
+  }
+
+  #hero .container {
+    gap: 1rem;
+  }
+
+  #hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  #hero img {
+    width: 70%;
+  }
+
+  #hero .btn {
+    display: block;
+    width: auto;
+    margin-bottom: 0.6rem;
+    margin-right: 0;
+  }
+}
