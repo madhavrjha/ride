@@ -263,6 +263,10 @@
   #ride {
     padding: 2rem 0;
   }
+
+  #ride .btn {
+    margin-top: 2rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -277,14 +281,37 @@
   #ride p {
     width: 90%;
   }
-
-  #ride .btn {
-    margin-top: 2rem;
-  }
 }
 
 @media (max-width: 400px) {
   #ride img {
     width: 70%;
+  }
+}
+
+/*
+================================================================================
+  section#vehicle
+================================================================================
+*/
+
+@media (max-width: 992px) {
+  #vehicle .owl-nav {
+    position: relative;
+  }
+
+  #vehicle .owl-prev,
+  #vehicle .owl-next {
+    position: absolute;
+    left: 0;
+    top: 2rem;
+  }
+
+  #vehicle .owl-prev {
+    left: 43%;
+  }
+
+  #vehicle .owl-next {
+    left: 54%;
   }
 }
