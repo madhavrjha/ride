@@ -365,3 +365,38 @@
     font-size: 1rem;
   }
 }
+
+/*
+================================================================================
+  section#safety
+================================================================================
+*/
+
+@media (max-width: 992px) {
+  #safety h2 {
+    font-weight: 400;
+  }
+
+  #safety p {
+    width: 90%;
+    text-align: center;
+  }
+
+  #safety img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  #safety .container > div {
+    grid-template-columns: 1fr;
+  }
+
+  #safety .container > div:nth-child(3) img {
+    grid-row: 1 / 2;
+  }
+
+  #safety h2 {
+    margin-bottom: 1rem;
+  }
+}
