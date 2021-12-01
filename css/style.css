@@ -571,7 +571,7 @@ aside nav a {
   position: absolute;
   top: -4rem;
   transform: translateY(-50%);
-  color: #777;
+  color: #c7c7f5;
   font-size: 2rem;
   transition: all 0.5s ease-in-out;
 }
@@ -756,7 +756,7 @@ aside nav a {
   position: absolute;
   top: 40%;
   transform: translateY(-50%);
-  color: #555;
+  color: #c7c7f5;
   font-size: 2rem;
   transition: all 0.5s ease-in-out;
 }
