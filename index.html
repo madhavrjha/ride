@@ -17,6 +17,8 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./css/utility.css">
 
   <title>NextNow: Get Affordable and Better Ride</title>
 </head>
@@ -30,10 +32,13 @@
           <img src="./images/brand.svg" height="45px">
         </a>
       </div>
-      <div class="search-box">
+      <div>
+        <i class="fas fa-bars fa-3x"></i>
+      </div>
+      <!-- <div class="search-box">
         <i class="fas fa-search"></i>
         <input type="search" name="" id="" placeholder="where are you going?">
-      </div>
+      </div> -->
       <div class="header-menu">
         <ul>
           <li><a href="#">Drivers</a></li>
@@ -50,6 +55,32 @@
       </div>
     </div>
   </header>
+
+  <aside id="side-menu" class="hide">
+    <div class="container">
+      <div>
+        <div>
+          <a href="./index.html">
+            <img src="./images/brand.svg" height="45px">
+          </a>
+        </div>
+        <div class="right">
+          <a href="#" class="btn">Log In</a>
+          <i class="fas fa-xmark fa-3x"></i>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Drivers</a></li>
+          <li><a href="#">Riders</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Sign Up to ride</a></li>
+          <li><a href="#">Apply to Drive</a></li>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
 
   <section id="hero">
     <div class="container">
@@ -301,6 +332,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
   <!-- Custom JS -->
+  <script src="./js/index.js"></script>
+
+  <!-- In page JS -->
   <script>
     $('.featured-carousel').owlCarousel({
       loop: true,
